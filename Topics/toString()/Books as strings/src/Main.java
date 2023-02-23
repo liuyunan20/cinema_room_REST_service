@@ -11,6 +11,7 @@ class Book {
     }
     @Override
     public String toString() {
-        return "title=" + title + ",yearOfPublishing=" + yearOfPublishing + ",authors=[" + String.join(",", authors) + "]";
+        return "title=" + title + ",yearOfPublishing=" + yearOfPublishing +
+                ",authors=[" + String.join(",", authors) + "]";
     }
 }
