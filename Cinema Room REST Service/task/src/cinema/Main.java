@@ -1,21 +1,18 @@
 package cinema;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-    }
-    @RestController
-    public class TaskController {
-        private Cinema cinema = new Cinema(9, 9);
-        @GetMapping("/seats")
-        public Cinema getCinema() {
-            return cinema;
-        }
     }
 }
 
